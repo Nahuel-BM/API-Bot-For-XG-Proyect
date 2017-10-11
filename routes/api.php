@@ -18,6 +18,8 @@ Route::get('/','ServerController@index');
 Route::get('/server','ServerController@index');
 Route::get('/server/{id}','ServerController@show');
 
+
+
 Route::group(['middleware' => ['web','auth:api']], function()
 {
     Route::get('/buildings/'      ,'BuildingsController@index');
