@@ -11,12 +11,15 @@
 |
 */
 
+
 Route::get('/', function () {
     return redirect('/login');
 });
 
 Auth::routes();
 Route::resource('home','HomeController');
+
+
 /*
 Route::resource('planets','PlanetsController');
 Route::resource('buildings','BuildingsController');

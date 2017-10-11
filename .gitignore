@@ -6,6 +6,4 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
-/config/*
 composer.lock
