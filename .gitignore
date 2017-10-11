@@ -7,3 +7,5 @@
 Homestead.json
 Homestead.yaml
 composer.lock
+/nbproject/private/
+/nbproject/
