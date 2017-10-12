@@ -4,9 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Options extends Model
-{
-	protected $fillable = ['option_id', 'option_name', 'option_value'];
+class Options extends Model {
 
-	protected $hidden = ['option_id'];
+    protected $connection = 'mysql';
+    protected $fillable = ['option_id', 'option_name', 'option_value'];
+    protected $hidden = ['option_id'];
+
 }

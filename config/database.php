@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'api'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,14 +55,15 @@ return [
 
 	 'api'  => [
 	    'driver'     => 'mysql',
-	    'host'       => env('API_HOST', 'localhost'),
-	    'database'   => env('API_DATABASE', 'api'),
-	    'username'   => env('API_USERNAME', 'root'),
-	    'password'   => env('API_PASSWORD', 'root'),
+	    'host'       => env('API_HOST', '127.0.0.1'),
+	    'database'   => env('API_DATABASE', 'forge'),
+	    'username'   => env('API_USERNAME', 'forge'),
+	    'password'   => env('API_PASSWORD', ''),
 	    'charset'    => 'utf8mb4',
 	    'collation'  => 'utf8mb4_unicode_ci',
 	    'prefix'     => 'api_',
-	    'strict'     => false,
+	    'strict'     => true,
+             'engine' => null,
 	     ],
 
         'pgsql' => [
